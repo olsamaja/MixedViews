@@ -27,7 +27,7 @@ struct TransactionView: View {
                 Text(subTitle)
                     .font(.footnote)
             }
-            Spacer()
+            Spacer(minLength: 10)
             Text(amount)
                 .font(.body)
         }

@@ -33,6 +33,7 @@ public class BannersViewBuilder: BuilderProtocol {
                     BannerView(title: model.title, subTitle: model.subTitle)
                 }
             }
+            .padding()
         } else {
             EmptyView()
         }
