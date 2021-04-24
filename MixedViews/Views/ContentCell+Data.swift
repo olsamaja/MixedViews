@@ -13,10 +13,10 @@ extension ContentCell {
         static let card = ContentCell(type: CardView.self)
         static let transSection = ContentCell(type: TransactionsSectionView.self)
         static let transaction = ContentCell(type: TransactionView.self,
-                                             model: TransactionModel(title: "Some transaction", subTitle: "Tap to present details", amount: "£12.95"))
+                                             model: TransactionModel(title: "Some merchant", subTitle: "Transaction with no details", amount: "£12.95"))
         static let transDetail = ContentCell(type: TransactionView.self,
-                                             model: TransactionModel(title: "Another transaction", subTitle: "Transaction with no details", amount: "£1,2345.00"),
-                                             destination: AnyView(TransactionDetailsView(model: TransactionModel(title: "Title 3", subTitle: "Sub title", amount: "£12.95"))))
+                                             model: TransactionModel(title: "A merchant", subTitle: "Tap to present details", amount: "£1,2345.00"),
+                                             destination: AnyView(TransactionDetailsView(model: TransactionModel(title: "A merchant", subTitle: "Sub title", amount: "£1,2345.00"))))
         static let balance = ContentCell(type: BalanceView.self,
                                          model: BalanceModel(spent: "£1,2345.00", available: "£2,550.00", creditLimit: "£4,000.00"))
         static let banners = ContentCell(type: BannersView.self,

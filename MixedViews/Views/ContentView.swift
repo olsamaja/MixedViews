@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     let sections = ContentCell.sections
-
+    
     @ViewBuilder
     var body: some View {
         NavigationView {
