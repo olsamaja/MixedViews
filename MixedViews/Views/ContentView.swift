@@ -9,22 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let sections = ContentCell.sections
+    let sections = RowModel.sections
     
     @ViewBuilder
     var body: some View {
         NavigationView {
             List {
                 ForEach(0..<sections.count) { index in
-                    if let header = sections[index].header {
-                        Section(header: contentCellView(header)) {
-                            if let cells = sections[index].cells {
-                                contentCellViews(cells)
+                    if let headerModel = sections[index].headerModel {
+                        Section(header: contentRow(headerModel)) {
+                            if let rowModels = sections[index].rowModels {
+                                contentRows(rowModels)
                             }
                         }
                         .textCase(nil)
-                    } else if let cells = sections[index].cells {
-                        contentCellViews(cells)
+                    } else if let rowModels = sections[index].rowModels {
+                        contentRows(rowModels)
                     }
                 }
             }
@@ -32,15 +32,15 @@ struct ContentView: View {
         }
     }
     
-    private func contentCellView(_ cell: ContentCell) -> some View {
-        ContentCellBuilder()
-            .withItem(cell)
+    private func contentRow(_ rowModel: RowModel) -> some View {
+        ContentRowBuilder()
+            .withModel(rowModel)
             .build()
     }
     
-    private func contentCellViews(_ cells: [ContentCell]) -> some View {
-        ForEach(0..<cells.count) { index in
-            contentCellView(cells[index])
+    private func contentRows(_ rowsModels: [RowModel]) -> some View {
+        ForEach(0..<rowsModels.count) { index in
+            contentRow(rowsModels[index])
         }
     }
 }
