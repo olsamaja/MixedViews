@@ -32,5 +32,6 @@ struct BalanceView: View {
 struct BalanceView_Previews: PreviewProvider {
     static var previews: some View {
         BalanceView(model: BalanceModel(spent: "£1,450.00", available: "£2,550.00", creditLimit: "£4,000.00"))
+            .sizeThatFitPreview(with: "Balance")
     }
 }

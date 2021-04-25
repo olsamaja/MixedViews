@@ -43,5 +43,6 @@ public class BannersViewBuilder: BuilderProtocol {
 struct BannersView_Previews: PreviewProvider {
     static var previews: some View {
         BannersView()
+            .sizeThatFitPreview(with: "Banners")
     }
 }

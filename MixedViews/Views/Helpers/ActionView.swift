@@ -24,5 +24,6 @@ struct ActionView: View {
 struct CellView_Previews: PreviewProvider {
     static var previews: some View {
         ActionView(title: "Title")
+            .sizeThatFitPreview(with: "Action")
     }
 }

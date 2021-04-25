@@ -28,5 +28,6 @@ struct TransactionsSectionView: View {
 struct TransactionsSectionView_Previews: PreviewProvider {
     static var previews: some View {
         TransactionsSectionView(title: "Title")
+            .sizeThatFitPreview(with: "Transactions section header")
     }
 }

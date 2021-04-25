@@ -26,5 +26,6 @@ struct BalanceAmountView: View {
 struct BalanceAmountView_Previews: PreviewProvider {
     static var previews: some View {
         BalanceAmountView(title: "Title", amount: "£1,2345.00")
+            .sizeThatFitPreview(with: "Balance Amount")
     }
 }

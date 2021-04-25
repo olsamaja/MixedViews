@@ -37,6 +37,7 @@ struct TransactionView: View {
 struct TransactionView_Previews: PreviewProvider {
     static var previews: some View {
         TransactionView(model: TransactionModel(title: "Title", subTitle: "Sub title", amount: "£12.95"))
+            .sizeThatFitPreview(with: "Transaction")
     }
 }
 
