@@ -15,15 +15,15 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(0..<sections.count) { index in
-                    if let headerModel = sections[index].headerModel {
+                ForEach(sections) { section in
+                    if let headerModel = section.headerModel {
                         Section(header: contentRow(headerModel)) {
-                            if let rowModels = sections[index].rowModels {
+                            if let rowModels = section.rowModels {
                                 contentRows(rowModels)
                             }
                         }
                         .textCase(nil)
-                    } else if let rowModels = sections[index].rowModels {
+                    } else if let rowModels = section.rowModels {
                         contentRows(rowModels)
                     }
                 }
@@ -39,8 +39,8 @@ struct ContentView: View {
     }
     
     private func contentRows(_ rowModels: [RowModel]) -> some View {
-        ForEach(0..<rowModels.count) { index in
-            contentRow(rowModels[index])
+        ForEach(rowModels) { model in
+            contentRow(model)
         }
     }
 }

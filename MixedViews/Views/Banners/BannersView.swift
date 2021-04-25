@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct BannersView: View {
+    
+    let models: [BannerModel]
+
     var body: some View {
-        HStack() {
-            BannerView(title: "Tap here!", subTitle: "Win a super prize")
-            BannerView(title: "Great deals!", subTitle: "£50 discount")
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(alignment: .top, spacing: 10) {
+                ForEach(models, id: \.self) { model in
+                    BannerView(title: model.title, subTitle: model.subTitle)
+                }
+            }
         }
+        .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
+        .listRowInsets(EdgeInsets())
     }
 }
 
@@ -28,15 +36,7 @@ public class BannersViewBuilder: BuilderProtocol {
     @ViewBuilder
     public func build() -> some View {
         if let models = self.models {
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(alignment: .top, spacing: 10) {
-                    ForEach(models, id: \.self) { model in
-                        BannerView(title: model.title, subTitle: model.subTitle)
-                    }
-                }
-            }
-            .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
-            .listRowInsets(EdgeInsets())
+            BannersView(models: models)
         } else {
             EmptyView()
         }
@@ -45,7 +45,12 @@ public class BannersViewBuilder: BuilderProtocol {
 
 struct BannersView_Previews: PreviewProvider {
     static var previews: some View {
-        BannersView()
+        BannersViewBuilder()
+            .withModels([
+                BannerModel(title: "Title 1", subTitle: "Subtile 1"),
+                BannerModel(title: "Title 2", subTitle: "Subtile 2")
+            ])
+            .build()
             .sizeThatFitPreview(with: "Banners")
     }
 }

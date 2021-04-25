@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-public struct RowModel {
+public struct RowModel: Identifiable {
+    
+    public var id = UUID().uuidString
     
     let type: Any
     let model: Any?
@@ -20,7 +22,9 @@ public struct RowModel {
     }
 }
 
-public struct SectionModel {
+public struct SectionModel: Identifiable {
+    
+    public var id = UUID().uuidString
     
     let headerModel: RowModel?
     let rowModels: [RowModel]?

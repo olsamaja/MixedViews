@@ -16,10 +16,10 @@ struct ContentRow: View {
     }
 
     var body: some View {
-        ContentRow.makeRowView(rowModel: rowModel)
+        ContentRow.makeRowView(with: rowModel)
     }
     
-    static private func makeRowView(rowModel: RowModel) -> some View {
+    static private func makeRowView(with rowModel: RowModel) -> some View {
         switch rowModel.type.self {
         case is CardView.Type:
             return AnyView( CardView() )
