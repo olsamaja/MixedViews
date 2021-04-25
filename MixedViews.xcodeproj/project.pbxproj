@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7D4BF8F42632D66D001722B4 /* BuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BF8F32632D66D001722B4 /* BuilderProtocol.swift */; };
 		7D4BF9012632D6B6001722B4 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BF9002632D6B6001722B4 /* ActionView.swift */; };
-		7D4BF90C26330999001722B4 /* BannerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BF90B26330999001722B4 /* BannerContentView.swift */; };
 		7D4BF91126331B4E001722B4 /* TransactionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BF91026331B4E001722B4 /* TransactionDetailsView.swift */; };
 		7D4BF92126333417001722B4 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BF92026333417001722B4 /* BalanceView.swift */; };
 		7D4BF926263334D8001722B4 /* BalanceAmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BF925263334D8001722B4 /* BalanceAmountView.swift */; };
@@ -52,7 +51,6 @@
 /* Begin PBXFileReference section */
 		7D4BF8F32632D66D001722B4 /* BuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderProtocol.swift; sourceTree = "<group>"; };
 		7D4BF9002632D6B6001722B4 /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
-		7D4BF90B26330999001722B4 /* BannerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerContentView.swift; sourceTree = "<group>"; };
 		7D4BF91026331B4E001722B4 /* TransactionDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsView.swift; sourceTree = "<group>"; };
 		7D4BF92026333417001722B4 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 		7D4BF925263334D8001722B4 /* BalanceAmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceAmountView.swift; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 			children = (
 				7DCAEC822632B5A00052A4B9 /* BannersView.swift */,
 				7DCAEC872632B8B00052A4B9 /* BannerView.swift */,
-				7D4BF90B26330999001722B4 /* BannerContentView.swift */,
 			);
 			path = Banners;
 			sourceTree = "<group>";
@@ -376,7 +373,6 @@
 				7D4BF8F42632D66D001722B4 /* BuilderProtocol.swift in Sources */,
 				7D4BF9392633538F001722B4 /* TransactionsSectionView.swift in Sources */,
 				7D4BF91126331B4E001722B4 /* TransactionDetailsView.swift in Sources */,
-				7D4BF90C26330999001722B4 /* BannerContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
