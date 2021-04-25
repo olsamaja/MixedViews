@@ -38,9 +38,9 @@ struct ContentView: View {
             .build()
     }
     
-    private func contentRows(_ rowsModels: [RowModel]) -> some View {
-        ForEach(0..<rowsModels.count) { index in
-            contentRow(rowsModels[index])
+    private func contentRows(_ rowModels: [RowModel]) -> some View {
+        ForEach(0..<rowModels.count) { index in
+            contentRow(rowModels[index])
         }
     }
 }

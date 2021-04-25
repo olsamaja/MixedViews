@@ -18,6 +18,7 @@
 		7D4BF94626337F52001722B4 /* RowModel+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BF94526337F52001722B4 /* RowModel+Data.swift */; };
 		7D4BF94B26340BC6001722B4 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BF94A26340BC6001722B4 /* Color+Extension.swift */; };
 		7D52F4362634E275007F422F /* ContentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52F4352634E275007F422F /* ContentRow.swift */; };
+		7D52F4472635619E007F422F /* BalanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52F4462635619E007F422F /* BalanceModel.swift */; };
 		7DCAEC4B2632AB010052A4B9 /* MixedViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCAEC4A2632AB010052A4B9 /* MixedViewsApp.swift */; };
 		7DCAEC4D2632AB010052A4B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCAEC4C2632AB010052A4B9 /* ContentView.swift */; };
 		7DCAEC4F2632AB030052A4B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DCAEC4E2632AB030052A4B9 /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		7D4BF94526337F52001722B4 /* RowModel+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RowModel+Data.swift"; sourceTree = "<group>"; };
 		7D4BF94A26340BC6001722B4 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		7D52F4352634E275007F422F /* ContentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRow.swift; sourceTree = "<group>"; };
+		7D52F4462635619E007F422F /* BalanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceModel.swift; sourceTree = "<group>"; };
 		7DCAEC472632AB010052A4B9 /* MixedViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixedViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DCAEC4A2632AB010052A4B9 /* MixedViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedViewsApp.swift; sourceTree = "<group>"; };
 		7DCAEC4C2632AB010052A4B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			children = (
 				7DCAEC7D2632AC3A0052A4B9 /* CardView.swift */,
 				7D4BF92026333417001722B4 /* BalanceView.swift */,
+				7D52F4462635619E007F422F /* BalanceModel.swift */,
 				7D4BF925263334D8001722B4 /* BalanceAmountView.swift */,
 			);
 			path = "Card and Balance";
@@ -356,6 +359,7 @@
 				7D4BF94626337F52001722B4 /* RowModel+Data.swift in Sources */,
 				7D4BF94126337DA9001722B4 /* RowModel.swift in Sources */,
 				7DCAEC4B2632AB010052A4B9 /* MixedViewsApp.swift in Sources */,
+				7D52F4472635619E007F422F /* BalanceModel.swift in Sources */,
 				7D52F4362634E275007F422F /* ContentRow.swift in Sources */,
 				7D4BF92126333417001722B4 /* BalanceView.swift in Sources */,
 				7DCAEC882632B8B00052A4B9 /* BannerView.swift in Sources */,
