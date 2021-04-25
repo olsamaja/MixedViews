@@ -78,3 +78,46 @@ public class ContentRowBuilder: BuilderProtocol {
         }
     }
 }
+
+struct ContentRowBuilder_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            ContentRowBuilder()
+                .withModel(RowModel(type: CardView.self))
+                .build()
+                .sizeThatFitPreview(with: "Card")
+            ContentRowBuilder()
+                .withModel(RowModel(type: BalanceView.self,
+                                    model: BalanceModel(spent: "£1,2345.00", available: "£2,555.00", creditLimit: "£4,0000.00")))
+                .build()
+                .sizeThatFitPreview(with: "Balance")
+            ContentRowBuilder()
+                .withModel(RowModel(type: BannersView.self,
+                                    model: [
+                                        BannerModel(title: "Title1 ", subTitle: "Subtitle 1"),
+                                        BannerModel(title: "Title 2", subTitle: "Subtitle 2")
+                                    ]))
+                .build()
+                .sizeThatFitPreview(with: "Balance")
+            ContentRowBuilder()
+                .withModel(RowModel(type: TransactionsSectionView.self))
+                .build()
+                .sizeThatFitPreview(with: "Transaction Header")
+            ContentRowBuilder()
+                .withModel(RowModel(type: TransactionView.self,
+                                    model: TransactionModel(title: "Title", subTitle: "Subtitle", amount: "£1,2345.00")))
+                .build()
+                .sizeThatFitPreview(with: "Transaction")
+            ContentRowBuilder()
+                .withModel(RowModel(type: TransactionView.self,
+                                    model: TransactionModel(title: "Title", subTitle: "Subtitle", amount: "£1,2345.00"),
+                                    destination: AnyView(EmptyView())))
+                .build()
+                .sizeThatFitPreview(with: "Transaction with link")
+            ContentRowBuilder()
+                .withModel(RowModel(type: ActionView.self))
+                .build()
+                .sizeThatFitPreview(with: "Action")
+        }
+    }
+}
