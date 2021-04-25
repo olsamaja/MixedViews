@@ -28,12 +28,15 @@ public class BannersViewBuilder: BuilderProtocol {
     @ViewBuilder
     public func build() -> some View {
         if let models = self.models {
-            HStack {
-                ForEach(models, id: \.self) { model in
-                    BannerView(title: model.title, subTitle: model.subTitle)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(alignment: .top, spacing: 10) {
+                    ForEach(models, id: \.self) { model in
+                        BannerView(title: model.title, subTitle: model.subTitle)
+                    }
                 }
             }
-            .padding()
+            .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
+            .listRowInsets(EdgeInsets())
         } else {
             EmptyView()
         }

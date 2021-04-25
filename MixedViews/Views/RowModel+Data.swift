@@ -30,8 +30,9 @@ extension RowModel {
                                                           creditLimit: "£4,000.00"))
         static let banners = RowModel(type: BannersView.self,
                                       model: [
-                                              BannerModel(title: "Tap here 1!", subTitle: "Sub title 1"),
-                                              BannerModel(title: "Tap here 2!", subTitle: "Sub title 2")
+                                        BannerModel(title: "Tap here 1!", subTitle: "Sub title 1"),
+                                        BannerModel(title: "Tap here 2!", subTitle: "Sub title 2"),
+                                        BannerModel(title: "Tap here 3!", subTitle: "Sub title 3")
                                               ])
         static let moreAction = RowModel(type: ActionView.self)
     }
