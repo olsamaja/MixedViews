@@ -29,6 +29,7 @@
 		7DCAEC7E2632AC3A0052A4B9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCAEC7D2632AC3A0052A4B9 /* CardView.swift */; };
 		7DCAEC832632B5A00052A4B9 /* BannersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCAEC822632B5A00052A4B9 /* BannersView.swift */; };
 		7DCAEC882632B8B00052A4B9 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCAEC872632B8B00052A4B9 /* BannerView.swift */; };
+		D570175B2636FCAB00CBFAC6 /* SectionRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = D570175A2636FCAB00CBFAC6 /* SectionRows.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		7DCAEC7D2632AC3A0052A4B9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		7DCAEC822632B5A00052A4B9 /* BannersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersView.swift; sourceTree = "<group>"; };
 		7DCAEC872632B8B00052A4B9 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		D570175A2636FCAB00CBFAC6 /* SectionRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionRows.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				7DCAEC4C2632AB010052A4B9 /* ContentView.swift */,
+				D570175A2636FCAB00CBFAC6 /* SectionRows.swift */,
 				7D52F4352634E275007F422F /* ContentRow.swift */,
 				7D4BF94026337DA9001722B4 /* RowModel.swift */,
 				7D4BF94526337F52001722B4 /* RowModel+Data.swift */,
@@ -366,6 +369,7 @@
 				7DCAEC882632B8B00052A4B9 /* BannerView.swift in Sources */,
 				7DCAEC7E2632AC3A0052A4B9 /* CardView.swift in Sources */,
 				7D4BF94B26340BC6001722B4 /* Color+Extension.swift in Sources */,
+				D570175B2636FCAB00CBFAC6 /* SectionRows.swift in Sources */,
 				7D4BF9012632D6B6001722B4 /* ActionView.swift in Sources */,
 				7DCAEC792632AB1A0052A4B9 /* TransactionView.swift in Sources */,
 				7D4BF926263334D8001722B4 /* BalanceAmountView.swift in Sources */,

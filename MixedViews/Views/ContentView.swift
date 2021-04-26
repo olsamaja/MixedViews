@@ -11,36 +11,14 @@ struct ContentView: View {
     
     let sections = RowModel.sections
     
-    @ViewBuilder
     var body: some View {
         NavigationView {
             List {
                 ForEach(sections) { section in
-                    if let headerModel = section.headerModel {
-                        Section(header: contentRow(headerModel)) {
-                            if let rowModels = section.rowModels {
-                                contentRows(rowModels)
-                            }
-                        }
-                        .textCase(nil)
-                    } else if let rowModels = section.rowModels {
-                        contentRows(rowModels)
-                    }
+                    SectionRows(sectionModel: section)
                 }
             }
             .navigationTitle("Home")
-        }
-    }
-    
-    private func contentRow(_ rowModel: RowModel) -> some View {
-        ContentRowBuilder()
-            .withModel(rowModel)
-            .build()
-    }
-    
-    private func contentRows(_ rowModels: [RowModel]) -> some View {
-        ForEach(rowModels) { model in
-            contentRow(model)
         }
     }
 }
