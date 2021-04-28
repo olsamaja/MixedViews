@@ -19,8 +19,8 @@ struct BannersView: View {
                 }
             }
         }
-        .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
-        .listRowInsets(EdgeInsets())
+        .padding()
+        .background(Color.white)
     }
 }
 

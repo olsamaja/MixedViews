@@ -17,7 +17,6 @@ struct CardView: View {
                 .padding()
             Spacer()
         }
-        .listRowInsets(EdgeInsets())
         .background(Color.white)
     }
 }

@@ -22,8 +22,6 @@ struct MixedViewsApp: App {
 
                     UINavigationBar.appearance().standardAppearance = navBarAppearance
                     UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
-                    
-                    UITableView.appearance().backgroundColor = .defaultBackround
                 }
         }
     }

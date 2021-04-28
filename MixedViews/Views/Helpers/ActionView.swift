@@ -16,7 +16,6 @@ struct ActionView: View {
             .foregroundColor(.blue)
             .frame(maxWidth: .infinity, alignment: .center)
             .padding()
-            .listRowInsets(EdgeInsets())
             .background(Color.defaultBackround)
     }
 }

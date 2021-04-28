@@ -20,11 +20,7 @@ struct ContainedView: View {
         case .error:
             Text("error")
         case .loaded(let sections):
-            List {
-                ForEach(sections) { section in
-                    SectionRows(sectionModel: section)
-                }
-            }
+            ContentLoadedView(sections: sections)
         }
     }
 }

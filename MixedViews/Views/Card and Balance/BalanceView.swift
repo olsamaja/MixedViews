@@ -24,7 +24,6 @@ struct BalanceView: View {
                 .foregroundColor(.gray)
         }
         .padding()
-        .listRowInsets(EdgeInsets())
         .background(Color.white)
     }
 }
